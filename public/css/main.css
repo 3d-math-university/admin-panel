@@ -1,0 +1,224 @@
+.page {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  width: 100%;
+}
+.page--table {
+  display: table;
+  height: 100vh;
+}
+.link {
+  text-decoration: none;
+  font-size: 14px;
+  color: #1e90ff;
+  transition: .3s ease;
+}
+.link:hover {
+  color: #0071e2;
+}
+.btn {
+  padding: 13px;
+  font-size: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: .3s ease;
+}
+.btn--blue {
+  border: 1px solid #1e90ff;
+  background-color: #1e90ff;
+  color: #fff;
+}
+.btn--blue:hover {
+  background-color: #0071e2;
+}
+.form__input-wrapper {
+  position: relative;
+}
+.form__input--bar {
+  width: 100%;
+  padding: 13px 20px 13px 40px;
+  font-size: 16px;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  transition: .3s ease;
+}
+.form__input--bar:hover {
+  border-color: #1e90ff;
+}
+.form__input--bar:active,
+.form__input--bar:focus {
+  outline: none;
+  border-color: #1e90ff;
+  box-shadow: 0px 0px 3px 0px #1e90ff;
+}
+.form__input--bar:active + .form__icon,
+.form__input--bar:focus + .form__icon {
+  opacity: .3;
+}
+.form__label {
+  position: absolute;
+}
+.form__label--auth {
+  font-size: 12px;
+  padding: 10px 4px 0px 4px;
+  background-color: white;
+  top: -16px;
+  left: 5px;
+  color: #969696;
+  z-index: 9;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.form__icon {
+  position: absolute;
+  object-fit: contain;
+  transition: .3s ease;
+}
+.form__icon--small {
+  max-height: 20px;
+  max-width: 20px;
+}
+.form__icon--large {
+  max-height: 50px;
+  max-width: 50px;
+}
+.form__icon--input {
+  top: 13px;
+  left: 10px;
+  opacity: 0.6;
+}
+.form__icon--fail {
+  left: 10px;
+  top: -2px;
+}
+.form__icon--success {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 10px;
+}
+.form__item {
+  position: relative;
+  margin: 20px auto;
+}
+.form__item--right {
+  text-align: right;
+}
+.form__item--center {
+  text-align: center;
+}
+.form__item--mt30 {
+  margin-top: 30px;
+}
+.form__text {
+  font-size: 14px;
+  color: #969696;
+}
+.form__text--fail {
+  padding: 10px 20px 10px 40px;
+  bottom: -15px;
+  color: #de0000;
+}
+.form__fail {
+  margin: 10px auto;
+  position: relative;
+  max-height: 0px;
+  overflow: hidden;
+  transition: .3s ease;
+}
+.auth-form {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.auth-form__bg {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.auth-form__block {
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 0px 25px 3px #dcdcdc;
+  position: relative;
+  display: inline-block;
+  max-height: 500px;
+}
+.auth-form__block--left,
+.auth-form__block--right {
+  display: inline-block;
+  vertical-align: top;
+}
+.auth-form__block--right {
+  padding: 50px 50px 0px 50px;
+  text-align: left;
+  width: 300px;
+}
+.auth-form__block--success {
+  width: 300px;
+  padding: 50px;
+}
+.auth-form__block--background {
+  width: 700px;
+  height: 500px;
+  border-radius: 5px 0px 0px 5px;
+  object-fit: cover;
+}
+.auth-form__block--content {
+  margin: auto;
+}
+.auth-form__logo {
+  position: relative;
+}
+.auth-form__logo--title {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  font-size: 36px;
+}
+.footer__auth {
+  text-align: center;
+  font-size: 12px;
+  color: #969696;
+  width: 300px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.footer__auth--p {
+  position: absolute;
+  bottom: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .auth-form__block--left {
+    display: none;
+  }
+  .auth-form__block--right {
+    padding: 50px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .auth-form__block--right,
+  .auth-form__block--success {
+    padding: 40px 25px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .auth-form__block--right,
+  .auth-form__block--success {
+    width: 250px;
+    padding: 40px 25px;
+  }
+}

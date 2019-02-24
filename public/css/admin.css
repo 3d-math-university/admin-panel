@@ -1,0 +1,235 @@
+.page {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  width: 100%;
+  height: 100vh;
+}
+.page__inner {
+  display: inline-block;
+  vertical-align: top;
+  padding: 30px 50px;
+  width: calc(100% - 26%);
+}
+.page__content--ib {
+  display: inline-block;
+  vertical-align: top;
+}
+.page__content--sidebar {
+  position: absolute;
+  height: 100vh;
+  right: 0;
+  top: 0;
+}
+.page__title-text {
+  margin: 0px;
+}
+.page__title-text--large {
+  margin: 25px 0px;
+  font-size: 56px;
+}
+.page__title-text--medium {
+  font-size: 28px;
+}
+.page__title-text--input {
+  border-bottom: 2px solid #dcdcdc;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+}
+.page__list {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.page__item--block {
+  display: inline-block;
+  width: 30%;
+  margin: 10px 20px;
+}
+.page__item--block:nth-child(3n) {
+  margin-right: auto;
+}
+.page__item--block:first-child,
+.page__item--block:nth-child(3n+1) {
+  margin-left: auto;
+}
+.page__item--block:hover .page__icon {
+  filter: grayscale(100%) brightness(0%) invert(100%);
+}
+.page__link--block {
+  text-align: center;
+  border-radius: 5px;
+  display: block;
+  padding: 50px;
+  transition: .3s ease;
+}
+.page__link--block-blue {
+  border: 1px dashed #1e90ff;
+  color: #1e90ff;
+}
+.page__link--block-blue:hover {
+  background-color: #1e90ff;
+  color: #fff;
+}
+.page__link--block-green {
+  border: 1px dashed #6bea6b;
+  color: #6bea6b;
+}
+.page__link--block-green:hover {
+  background-color: #6bea6b;
+  color: #fff;
+}
+.page__link--block-orange {
+  border: 1px dashed #ffad2b;
+  color: #ffad2b;
+}
+.page__link--block-orange:hover {
+  background-color: #ffad2b;
+  color: #fff;
+}
+.page__icon--large {
+  min-height: 75px;
+  max-height: 75px;
+  margin: 20px;
+  transition: .3s ease;
+}
+.page__icon--small {
+  min-height: 25px;
+  max-height: 25px;
+}
+.page__table--title {
+  padding: 10px;
+  margin: 0;
+}
+.page__table--number {
+  max-width: 50px;
+  width: 100%;
+  text-align: center;
+}
+.page__table--name {
+  width: 70%;
+}
+.page__table--status,
+.page__table--buttons {
+  width: 12%;
+  text-align: center;
+}
+.page__table-item {
+  display: inline-block;
+  vertical-align: middle;
+}
+.page__table-item--mx10 {
+  margin: 10px;
+}
+.page__table-item--header {
+  background-color: #1e90ff;
+  font-weight: 900;
+}
+.page__form-item {
+  margin: 13px auto;
+}
+.page__form-item--background {
+  background-color: #dcdcdc;
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+  width: 100%;
+}
+.page__form-input {
+  width: 340px;
+  border: 1px solid #dcdcdc;
+}
+.page__form-input--submit {
+  background-color: #1e90ff;
+  color: #fff;
+  font-size: 16px;
+}
+.page__form-input--submit:hover {
+  background-color: #0071e2;
+}
+.btn {
+  padding: 13px;
+  margin: 10px auto;
+  font-size: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  box-sizing: border-box;
+  transition: .3s ease;
+}
+.btn--blue {
+  border: 1px solid #1e90ff;
+  background-color: #1e90ff;
+  color: #fff;
+}
+.btn--blue:hover {
+  background-color: #0071e2;
+}
+.link {
+  text-decoration: none;
+}
+.sidebar {
+  display: inline-block;
+  background-color: #121212;
+  height: 100%;
+  position: relative;
+  min-width: 300px;
+}
+.sidebar__item--footer {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  color: #dcdcdc;
+}
+.sidebar__title {
+  color: #1e90ff;
+  text-align: center;
+}
+.sidebar__menu {
+  list-style: none;
+  padding: 0px;
+  margin: 0;
+}
+.sidebar__menu-item {
+  padding: 17px 20px;
+  display: block;
+  font-size: 18px;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  transition: .3s ease;
+}
+.sidebar__menu-item--link {
+  color: #fff;
+}
+.sidebar__menu-item--link:hover {
+  color: #1e90ff;
+  background-color: #fff;
+}
+.sidebar__menu-item--exit {
+  color: #de0000;
+}
+.sidebar__menu-item--exit:hover {
+  color: #fff;
+  background-color: #de0000;
+}
+.sidebar__logo {
+  text-align: center;
+}
+.sidebar__logo-image {
+  width: auto;
+  max-height: 250px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  overflow: hidden;
+  vertical-align: middle;
+}
