@@ -8,6 +8,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+
 ## 1) Server Requirements
 
 1. PHP:
@@ -27,25 +28,26 @@
 
 ## 2) Deployment on MacOS, LinuxOS
 
-1. Clone git
+    1. Clone git 
+    >$ git clone [https://github.com/3d-math-university/admin-panel.git
 
-    - $ git clone https://github.com/3d-math-university/admin-panel.git
-
-2. Run composer command:
-    - $ composer update
+    2. Run composer command:
+    >$ composer update
     
-2. After installing project change default path in project in /path/to/project/public
+    3. After installing project change default path in project in `/path/to/project/public`
 
-3. Permissions directory
-    Run command in console:
-    - $ sudo chmod -R 755 /path/to/project/storage
-    - $ sudo chmod -R 755 /path/to/project/bootstrap/cache
+    4. Permissions directory
+    - Run command in console:
+    > $ sudo chmod -R 755 `/path/to/project/storage`
+    > $ sudo chmod -R 755 `/path/to/project/bootstrap/cache`
     
-4. Application Key
+    5. Application key
+    - Run command in project: $ php artisan key:generate
    
-   - Run command in project: $ php artisan key:generate
-   
-5. Environment file
+    6. Environment file
+    - Copy `.env.example` and rename file to `.env`
+    - Edit lines`(DB_DATABASE=%your-database%, DB_USERNAME=%your-username%, DB_PASSWORD=%your-password%)` in `.env` file for database
     
-    - Copy .env.example and rename file to .env
-    - Edit lines(DB_DATABASE=%your-database%, DB_USERNAME=%your-username%, DB_PASSWORD=%your-password%) in .env file for database
+## 3) Deployment on Windows
+
+    > ??????
