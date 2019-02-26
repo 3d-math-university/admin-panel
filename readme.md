@@ -29,7 +29,7 @@
 ## 2) Deployment on MacOS, LinuxOS
 
     1. Clone git 
-    >$ git clone [https://github.com/3d-math-university/admin-panel.git
+    >$ git clone https://github.com/3d-math-university/admin-panel.git
 
     2. Run composer command:
     >$ composer update
