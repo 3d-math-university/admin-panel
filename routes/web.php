@@ -28,3 +28,6 @@ Route::post('password/reset', 'Auth\ResetPasswordController@reset');
 Route::get('password/success', 'Auth\ResetPasswordController@showResetPasswordSuccess')->name('password.success');
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('/departments', 'HomeController@departments')->name('departments');
+Route::get('/settings', 'HomeController@settings')->name('settings');
+Route::get('/page', 'HomeController@page')->name('page');
