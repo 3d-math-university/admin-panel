@@ -48,6 +48,9 @@
     - Copy `.env.example` and rename file to `.env`
     - Edit lines`(DB_DATABASE=%your-database%, DB_USERNAME=%your-username%, DB_PASSWORD=%your-password%)` in `.env` file for database
     
+    7. Migrate database
+    - Run command in project $ php artisan migrate
+    
 ## 3) Deployment on Windows
 
     > ??????
