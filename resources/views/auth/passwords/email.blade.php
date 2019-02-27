@@ -57,15 +57,16 @@
                                         <img src="{{ asset('/images/png/envelope.png') }}" alt="" class="form__icon form__icon--small form__icon--input">
                                     </div>
                                 </div>
-                                <!--here goes php code if error--> 
+                                <!--here goes php code if error-->
                                 <div class="form__fail">
-                                    <img src="../../images/png/alert.png" alt="" class="form__icon form__icon--small form__icon--fail">
-                                    <span class="form__text form__text--fail">error ocurred</span>
+                                    <img src="{{ asset('/images/png/alert.png') }}" alt="" class="form__icon form__icon--small form__icon--fail">
+                                    <span class="form__text form__text--fail">{{ $errors->first('email') }}</span>
                                 </div>
                                 <!--end of php code-->
                                 <div class="form__item form__item--right">
                                     <input type="submit" class="btn btn--blue" value="Send message">
-                                </div>
+                                <a href="{{ route('login') }}" class="btn btn--blue">Back to sign up</a>
+                            </div>
                             </div>
                         </form>
                         <!-- <footer class="footer__auth footer__auth--p">
