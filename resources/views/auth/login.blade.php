@@ -13,7 +13,7 @@
                         <h1 class="auth-form__logo--title">My Faculty</h1>
                     </div>
                     <form method="POST" action="{{ route('login') }}" class="form__wrapper">
-
+                        
                         {{ csrf_field() }}
 
                         <div class="form__items">
@@ -26,10 +26,10 @@
 
                                 @if ($errors->has('email'))
 
-                                    <div class="">
-                                        <img src="{{ asset('/images/png/alert.png') }}" alt="" class="form__icon form__icon--small form__icon--fail">
-                                        <span class="form__text form__text--fail">{{ $errors->first('email') }}</span>
-                                    </div>
+                                <div class="form__fail">
+                                    <img src="../../images/png/alert.png" alt="" class="form__icon form__icon--small form__icon--fail">
+                                    <span class="form__text form__text--fail">{{ $errors->first('email') }}</span>
+                                </div>
 
                                 @endif
 
@@ -43,10 +43,10 @@
 
                                 @if ($errors->has('password'))
 
-                                    <div class="">
-                                        <img src="{{ asset('/images/png/alert.png') }}" alt="" class="form__icon form__icon--small form__icon--fail">
-                                        <span class="form__text form__text--fail">{{ $errors->first('password') }}</span>
-                                    </div>
+                                <div class="form__fail">
+                                    <img src="../images/png/alert.png" alt="" class="form__icon form__icon--small form__icon--fail">
+                                    <span class="form__text form__text--fail">{{ $errors->first('password') }}</span>
+                                </div>
 
                                 @endif
 
