@@ -27,8 +27,9 @@
             <nav class="sidebar__item">
                 <ul class="sidebar__menu">
                     <li><a href="{{ route('home') }}" class="link sidebar__menu-item sidebar__menu-item--link">Dashboard</a></li>
-                    <li><a href="{{ route('home') }}" class="link sidebar__menu-item sidebar__menu-item--link">Departments</a></li>
-                    <li><a href="{{ route('home') }}" class="link sidebar__menu-item sidebar__menu-item--link">Settings</a></li>
+                    <li><a href="{{ route('departments') }}" class="link sidebar__menu-item sidebar__menu-item--link">Departments</a></li>
+                    <li><a href="{{ route('settings') }}" class="link sidebar__menu-item sidebar__menu-item--link">Settings</a></li>
+                    <li><a href="{{ route('page') }}" class="link sidebar__menu-item sidebar__menu-item--link">Page</a></li>
                     <li><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="link sidebar__menu-item sidebar__menu-item--exit">Exit</a>
                     </li>
 

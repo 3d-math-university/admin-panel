@@ -9,19 +9,19 @@
         <div class="page__content">
             <ul class="page__list page__list--blocks">
                 <li class="page__item page__item--block">
-                    <a href="{{ route('home') }}" class="link page__link--block page__link--block-orange">
+                    <a href="{{ route('departments') }}" class="link page__link--block page__link--block-orange">
                         <img src="{{ asset('/images/png/university.png') }}" alt="" class="page__icon page__icon--large">
                         <h5 class="page__title-text page__title-text--medium">Departments</h5>
                     </a>
                 </li>
                 <li class="page__item page__item--block">
-                    <a href="{{ route('home') }}" class="link page__link--block page__link--block-green">
+                    <a href="{{ route('settings') }}" class="link page__link--block page__link--block-green">
                         <img src="{{ asset('/images/png/gear.png') }}" alt="" class="page__icon page__icon--large">
                         <h5 class="page__title-text page__title-text--medium">Settings</h5>
                     </a>
                 </li>
                 <li class="page__item page__item--block">
-                    <a href="{{ route('home') }}" class="link page__link--block page__link--block-blue">
+                    <a href="{{ route('page') }}" class="link page__link--block page__link--block-blue">
                         <img src="{{asset('/')}}" alt="" class="page__icon page__icon--large">
                         <h5 class="page__title-text page__title-text--medium">Item 3</h5>
                     </a>
