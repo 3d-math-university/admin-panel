@@ -27,7 +27,7 @@
                                 @if ($errors->has('email'))
 
                                 <div class="form__fail">
-                                    <img src="{{asset('/images/png/alert.png') }}" alt="" class="form__icon form__icon--small form__icon--fail">
+                                    <img src="{{ asset('/images/png/alert.png') }}" alt="" class="form__icon form__icon--small form__icon--fail">
                                     <span class="form__text form__text--fail">{{ $errors->first('email') }}</span>
                                 </div>
 
