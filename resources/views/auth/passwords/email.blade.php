@@ -64,8 +64,8 @@
                                 </div>
                                 <!--end of php code-->
                                 <div class="form__item form__item--right">
+                                    <a href="{{ route('login') }}" class="btn btn--blue">Back to sign up</a>
                                     <input type="submit" class="btn btn--blue" value="Send message">
-                                <a href="{{ route('login') }}" class="btn btn--blue">Back to sign up</a>
                             </div>
                             </div>
                         </form>
