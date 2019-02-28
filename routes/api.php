@@ -13,6 +13,11 @@ use Illuminate\Http\Request;
 |
 */
 
+Route::get('/github/pull', function (Request $request) {
+    if($request->secret == 'test') echo 1;
+        else abort(403);
+});
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
