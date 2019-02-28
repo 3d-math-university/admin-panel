@@ -10,7 +10,7 @@
             <div class="auth-form__block--right auth-form__block--right-pos">
                 <div class="auth-form__block--content">
                     <div class="auth-form__logo">
-                        <h1 class="auth-form__logo--title">My Faculty 1332</h1>
+                        <h1 class="auth-form__logo--title">My Faculty</h1>
                     </div>
                     <form method="POST" action="{{ route('login') }}" class="form__wrapper">
 
