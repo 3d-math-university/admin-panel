@@ -31,3 +31,5 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::get('/departments', 'HomeController@departments')->name('departments');
 Route::get('/settings', 'HomeController@settings')->name('settings');
 Route::get('/page', 'HomeController@page')->name('page');
+
+Route::get('/api/github', 'GithubController@github');
