@@ -14,10 +14,7 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::post('/github/pull', function (Request $request) {
-    if($request->secret == 'test') echo 1;
-        else abort(403);
-});
+Route::post('/github/deploy', 'GithubController@deploy');
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
