@@ -29,7 +29,7 @@
                         <div class="page__table-item page__table--name">
                             <a href="#" class="link page__table--title page__table--title-name">Page</a>
                         </div>
-                        <div class="page__table-item page__table--status">
+                        <div class="page__table-item page__table--status-select">
                             <select name="" id="">
                                 <option value="true">True</option>
                                 <option value="false">False</option>

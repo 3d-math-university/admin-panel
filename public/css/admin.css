@@ -147,6 +147,8 @@
 }
 .page__table--buttons{
   margin-left:100px;
+  height: calc(auto - 10px);
+  width: calc(auto - 10px);
 }
 .page__table-item {
   display: inline-block;
@@ -250,6 +252,11 @@
 .sidebar__menu-item--link, .topbar__menu-item--link {
   color: #fff;
 }
+.sidebar__menu-item--image{
+  width: 10%;
+  height: 10%;
+  padding-right: 10px;
+}
 .sidebar__menu-item--link:hover, .topbar__menu-item--link:hover {
   color: #1e90ff;
   background-color: #fff;
@@ -275,7 +282,7 @@
   overflow: hidden;
   vertical-align: middle;
 }
-/*---HERE BELOW GOES CSS FOR ADAPTIVE VERSION OF departmenrs.html----*/
+/*---HERE BELOW GOES CSS FOR ADAPTIVE VERSION OF departmenrs.html (shitty, non-used code; however, i fear that if i delet this everything will crash)----*/
 .topbar{
   margin-top:0px;
   min-width: max-content;
@@ -305,10 +312,40 @@
   white-space: nowrap;
   display: inline-block;
 }
-
+/*------*/
 .form__fail {
   position: relative;
   max-height: 100px;
   overflow: hidden;
   transition: .3s ease;
+}
+
+@media screen and (max-width:720px){
+  .sidebar__menu-item--text,
+  .sidebar__logo,
+  .sidebar__title-text,
+  .sidebar__item--footer
+  {
+    display: none;
+  }
+  .sidebar{
+    min-width: min-content;
+  }
+  .sidebar,
+  .sidebar__menu,
+  .sidebar__item{
+    width:auto;
+  }
+  .sidebar__menu-item{
+    line-height: 450%;
+  }
+  .sidebar__menu-item--link, .sidebar__menu-item--exit{
+    padding: 0%;
+  }
+  .sidebar__menu-item--image{
+    width:40px;
+    height: 40px;
+    padding:0%;
+    margin-left:2px;
+  }
 }
