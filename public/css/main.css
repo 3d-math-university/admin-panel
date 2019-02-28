@@ -97,7 +97,6 @@
 }
 .form__icon--fail {
   left: 10px;
-  top: -2px;
 }
 .form__icon--success {
   position: relative;
@@ -129,8 +128,10 @@
 }
 .form__fail {
   margin: 10px auto;
+  padding-bottom:18px;
   position: relative;
-  max-height: 0px;
+  max-height: 30px;
+  height:21px;
   overflow: hidden;
   transition: .3s ease;
 }
