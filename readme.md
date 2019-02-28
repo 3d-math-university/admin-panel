@@ -26,7 +26,7 @@
 4. Composer
 5. Git
 
-## 2) Deployment on MacOS, LinuxOS
+## 2) Deployment
 
     1. Clone git 
     > $ git clone https://github.com/3d-math-university/admin-panel.git
@@ -50,7 +50,4 @@
     
     7. Migrate database
     - Run command in project $ php artisan migrate
-    
-## 3) Deployment on Windows
-
-    > ??????
+ 
