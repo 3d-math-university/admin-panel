@@ -14,7 +14,7 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::get('/github/pull', function (Request $request) {
+Route::post('/github/pull', function (Request $request) {
     if($request->secret == 'test') echo 1;
         else abort(403);
 });
