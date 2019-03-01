@@ -336,6 +336,9 @@
   .sidebar__item{
     width:auto;
   }
+  .sidebar__item{
+    margin-top: 50%;
+  }
   .sidebar__menu-item{
     line-height: 450%;
   }
@@ -347,5 +350,18 @@
     height: 40px;
     padding:0%;
     margin-left:2px;
+  }
+}
+
+@media screen and (max-width:1289px){
+  .page__title-text--medium{
+    width:auto;
+    font-size: 90%;
+    display: block;
+    position: relative;
+  }
+  
+  .page__icon--large{
+    display: none;
   }
 }

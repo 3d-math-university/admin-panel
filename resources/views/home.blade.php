@@ -38,6 +38,7 @@
                     </li>
                 </ul>
             </div>
+            <a href="{{ route('404') }}">error page test</a>
         </div>
     </section>
 

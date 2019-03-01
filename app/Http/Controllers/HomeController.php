@@ -40,4 +40,9 @@ class HomeController extends Controller
     {
         return view('page');
     }
+    //written just for test; rewrite if incorrect
+    public function error()
+    {
+        return view('errors/404');
+    }
 }
