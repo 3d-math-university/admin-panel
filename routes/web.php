@@ -44,6 +44,3 @@ Route::post('/change/credentials', function(){
     };
     return redirect()->back()->with('success', 'Credentials not changed');
 })->name('change.credentials');
-
-//Error routes
-Route::get('/404NotFound','HomeController@error' )->name('404');

@@ -1,4 +1,40 @@
-.errpage__content-self{
+@font-face{
+    font-family: 'OCR';
+    src:url('../fonts/OCRAEXT.TTF');
+}
+.errpage__content-root{
+    margin: 0px;
+    background:#000;
+}
+.errpage__content-text--header{
+    text-align: center; 
+    font-family: 'OCR';
     text-align: center;
     white-space: nowrap;
+    font-size: 500%;
+    font-weight: 600;
+    color:#090;
+}
+.errpage__content-text{
+    font-family: 'OCR';
+    text-align: center;
+    text-orientation: sideways;
+    font-size: 300%;
+    font-weight: 400;
+    color:#090;
+}
+.errpage__return--wrapper{
+    text-align: center;
+}
+.errpage__return{
+    text-decoration: none;
+    font-family: 'OCR';
+    text-align: center;
+    background: #d00;
+    border-radius: 30%;
+    padding: 7px;
+    color: #090;
+}
+.errpage__return:visited{
+    color:#090;
 }

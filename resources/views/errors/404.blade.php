@@ -16,9 +16,8 @@
         <link href="{{ asset('css/errors.css') }}" rel="stylesheet">
 </head>
 <body class="errpage__content-root">
-    <div class="errpage__content-self">
-   <h1 class="errpage__content--header">Ooops...</h1>
-    <h3 class="errpage__content--text">A 404 error occured. Maybe you're looking for another item?</h3>
-</div>
+    <div class="errpage__content-text--header">404</div>
+    <span class="errpage__content-text">sorry, the page you are looking for doesn't exist</span>
+    <div class="errpage__return--wrapper"><a href="{{ route('departments') }}" class="errpage__return">return to main</a></div>
 </body>
 </html>
