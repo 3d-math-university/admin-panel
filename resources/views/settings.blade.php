@@ -30,7 +30,7 @@
             <div class="page__form-item">
                 <input type="submit" class="btn btn--blue page__form-submit" value="Submit">
             </div>
-            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+            {{ csrf_field() }}
         </form>
     </div>
 </section>
