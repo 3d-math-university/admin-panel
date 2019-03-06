@@ -3,7 +3,7 @@
 @section('content')
 
 <section class="page__inner">
-    <form action="/page/add" class="page__form" method="post" enctype="multipart/form-data">
+    <form action="{{ route('add') }}" class="page__form" method="post" enctype="multipart/form-data">
         <div class="page__title">
             <input type="text" placeholder="Title" class="page__title-text page__title-text--large page__title-text--input" name="title">
         </div>

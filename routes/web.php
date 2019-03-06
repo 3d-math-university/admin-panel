@@ -40,5 +40,7 @@ Route::any('/departments', 'PageController@index')->name('departments');
 Route::any('/page', 'HomeController@page')->name('page');
 Route::post('/page/add', 'PageController@add')->name('add');
 Route::get('/page/edit/{id}', 'PageController@edit')->name('edit');
-Route::post('/page/update/{id}', 'PageController@update')->name('update');
+Route::post('/page/update/{id}', 'PageController@update')->name('page.update');
 Route::get('/page/delete/{id}', 'PageController@delete')->name('delete');
+
+Route::get('/404', 'HomeController@index')->name('404');

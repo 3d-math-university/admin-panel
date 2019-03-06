@@ -32,8 +32,7 @@
                             <a href="#" class="link page__table--title page__table--title-name">{{ $page->title }}</a>
                         </div>
                         <div class="page__table-item page__table--status">
-                            <select name="" id="">
-
+                            <select name="" id="active" data-id="{{ $page->id }}">
                                 <option value="true" @if($page->active == 1) selected @endif >True</option>
                                 <option value="false" @if($page->active != 1) selected @endif>False</option>
                             </select>
@@ -59,4 +58,7 @@
                 </div>
             </div>
     </section><br>
+
+    <script src="{{ asset('js/jQuery.min.js') }}"></script>
+    <script src="{{ asset('js/status.js') }}"></script>
 @endsection

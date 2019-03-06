@@ -19,3 +19,5 @@ Route::post('/github/deploy', 'GithubController@deploy');
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('/status', 'StatusController')->name('status');

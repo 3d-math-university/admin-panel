@@ -16,7 +16,7 @@ class DepartmentsTable extends Migration
         Schema::create('departments', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
-            $table->string('image');
+            $table->string('image')->default('noimage.jpg');
             $table->boolean('active');
             $table->timestamps();
         });

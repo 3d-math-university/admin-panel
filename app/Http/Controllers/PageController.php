@@ -39,16 +39,16 @@ class PageController extends Controller
     {
         $this->validate($request, [
             'title' => 'required',
-            'image' => 'image|nullable|max:1999'
+            'image' => 'image|nullable|required'
         ]);
+        $imageName = '';
         if($request->hasFile('image')) {
             $name = $request->file('image')->getClientOriginalName();
             $ext = $request->file('image')->getClientOriginalExtension();
             $imageName = $name . '_' . time() . '.' . $ext;
-            $path = $request->file('image')->storeAs('public/images', $imageName);
+            $path = $request->file('image')->storeAs('public/uploads/images', $imageName);
         }
-        else
-            $imageName = 'noimage.jpg';
+
         $page = new Page;
         $page->title = $request->input('title');
         $page->image = $imageName;
@@ -77,6 +77,9 @@ class PageController extends Controller
     public function edit($id)
     {
         $page = Page::find($id);
+
+        if($page == null) return redirect('404');
+        
         return view('editpage')->with('page', $page);
     }
 
@@ -97,7 +100,7 @@ class PageController extends Controller
             $name = pathinfo($request->file('image')->getClientOriginalName(), PATHINFO_FILENAME);
             $ext = $request->file('image')->getClientOriginalExtension();
             $imageName = $name . '_' . time() . '.' . $ext;
-            $path = $request->file('image')->storeAs('public/images', $imageName);
+            $path = $request->file('image')->storeAs('public/uploads/images', $imageName);
         }
         else
             $imageName = Page::find($id)->image;
@@ -118,6 +121,7 @@ class PageController extends Controller
     public function delete($id)
     {
         $page = Page::find($id);
+        if($page == null) return redirect('404');
         $page->delete();
 
         return redirect('departments');
