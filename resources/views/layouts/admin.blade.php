@@ -16,6 +16,7 @@
 
     </head>
     <body class="page page--table">
+
         <section class="sidebar">
             <div class="sidebar__item sidebar__logo">
                 <img src="{{ asset('/images/backgrounds/background__admin.jpg') }}" alt="" class="sidebar__logo-image sidebar__logo-image--default">
@@ -25,12 +26,13 @@
             </div>
             <nav class="sidebar__item">
                 <ul class="sidebar__menu">
-                    <li class="sidebar__menu-item--li"><a href="{{ route('home') }}" class="link sidebar__menu-item sidebar__menu-item--link"><img src="{{ asset('images/png/dashboard.png') }}" class="sidebar__menu-item--image"><span class="sidebar__menu-item--text">Dashboard</span></a></li>
+                <li class="sidebar__menu-item--li"><a href="{{ route('home') }}" class="link sidebar__menu-item sidebar__menu-item--link"><img src="{{ asset('images/png/dashboard.png') }}" class="sidebar__menu-item--image"><span class="sidebar__menu-item--text">Dashboard</span></a></li>
                     <li class="sidebar__menu-item--li"><a href="{{ route('departments') }}" class="link sidebar__menu-item sidebar__menu-item--link"><img src="{{ asset('images/png/university.png') }}" class="sidebar__menu-item--image"><span class="sidebar__menu-item--text">Departments</span></a></li>
                     <li class="sidebar__menu-item--li"><a href="{{ route('settings') }}" class="link sidebar__menu-item sidebar__menu-item--link"><img src="{{ asset('images/png/gear.png') }}" class="sidebar__menu-item--image"><span class="sidebar__menu-item--text">Settings</span></a></li>
                     <li class="sidebar__menu-item--li"><a href="{{ route('page') }}" class="link sidebar__menu-item sidebar__menu-item--link"><img src="{{ asset('images/png/page.png') }}" class="sidebar__menu-item--image"><span class="sidebar__menu-item--text">Page</span></a></li>
                     <li class="sidebar__menu-item--li"><a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="link sidebar__menu-item sidebar__menu-item--exit"><img src="{{ asset('images/png/logout.png') }}" class="sidebar__menu-item--image"><span class="sidebar__menu-item--text">Exit</span></a>
                     </li>
+
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         {{ csrf_field() }}
                     </form>

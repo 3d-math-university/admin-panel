@@ -9,6 +9,7 @@
             <div class="page__content">
                 <div class="page__table_adapt">
                     <div class="page__table-item--header">
+                    <hr width="auto" size="3px" class="page__table-item--header-hr">
                         <div class="page__table-item page__table--number">
                             <p class="page__table--title">№</p>
                         </div>
@@ -21,6 +22,7 @@
                         <div class="page__table-item page__table--buttons">
                             <p class="page__table--title">Action</p>
                         </div>
+                        <hr width="auto" size="3px" class="page__table-item--header-hr">
                     </div>
                     <div class="page__table-item--block">
                         <div class="page__table-item page__table--number">
@@ -29,8 +31,8 @@
                         <div class="page__table-item page__table--name">
                             <a href="#" class="link page__table--title page__table--title-name">Page</a>
                         </div>
-                        <div class="page__table-item page__table--status-select">
-                            <select name="" id="">
+                        <div class="page__table-item page__table--status">
+                            <select name="" id="" class="page__table--status-option">
                                 <option value="true">True</option>
                                 <option value="false">False</option>
                             </select>

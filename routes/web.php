@@ -1,8 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Input as Input;
-use App\User;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,17 +27,14 @@ Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm
 Route::post('password/reset', 'Auth\ResetPasswordController@reset');
 Route::get('password/success', 'Auth\ResetPasswordController@showResetPasswordSuccess')->name('password.success');
 
-Route::get('/', 'HomeController@index')->name('home');
-Route::get('/departments', 'HomeController@departments')->name('departments');
-Route::get('/settings', 'HomeController@settings')->name('settings');
-Route::get('/page', 'HomeController@page')->name('page');
-Route::post('/change/credentials', function(){
-    $User = User::find(Auth::user()->id);
-    if(Input::post('new_password') == Input::post('repeat_password')){
-        $User->password = bcrypt(Input::post('new_password'));
-        $User->email = Input::post('email');
-        $User->save();
-        return redirect()->back()->with('success', 'Credentials changed');
-    };
-    return redirect()->back()->with('success', 'Credentials not changed');
-})->name('change.credentials');
+// Route for Home page
+Route::any('/', 'HomeController@index')->name('home');
+
+// Route for Settings page
+Route::any('/settings', 'SettingsController@index')->name('settings');
+
+// Route for Departments
+Route::any('/departments', 'HomeController@departments')->name('departments');
+
+// Route for ...
+Route::any('/page', 'HomeController@page')->name('page');
