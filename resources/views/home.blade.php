@@ -31,7 +31,7 @@
                 <h4 class="page__title-text--medium">Statistics: </h4>
                 <ul class="page__list">
                     <li class="page__item">
-                        <p class="page__text">Departments: </p>
+                        <p class="page__text">Departments: {{ count($pages) }} </h1></p>
                     </li>
                     <li class="page__item">
                         <p class="page__text">Users: </p>

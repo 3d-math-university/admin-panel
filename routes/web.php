@@ -34,7 +34,11 @@ Route::any('/', 'HomeController@index')->name('home');
 Route::any('/settings', 'SettingsController@index')->name('settings');
 
 // Route for Departments
-Route::any('/departments', 'HomeController@departments')->name('departments');
+Route::any('/departments', 'PageController@index')->name('departments');
 
 // Route for ...
 Route::any('/page', 'HomeController@page')->name('page');
+Route::post('/page/add', 'PageController@add')->name('add');
+Route::get('/page/edit/{id}', 'PageController@edit')->name('edit');
+Route::post('/page/update/{id}', 'PageController@update')->name('update');
+Route::get('/page/delete/{id}', 'PageController@delete')->name('delete');
