@@ -324,17 +324,19 @@
   .sidebar__menu-item--text,
   .sidebar__logo,
   .sidebar__title-text,
-  .sidebar__item--footer
+  .sidebar__item--footer,
+  .sidebar__title
   {
     display: none;
   }
   .sidebar{
-    min-width: min-content;
+    min-width: 33px;
   }
   .sidebar,
   .sidebar__menu,
   .sidebar__item{
-    width:auto;
+    width:33px;
+    padding:0px;
   }
   .sidebar__item{
     margin-top: 50%;
@@ -346,10 +348,20 @@
     padding: 0%;
   }
   .sidebar__menu-item--image{
-    width:40px;
-    height: 40px;
+    width: 28px;
+    height: 28px;
     padding:0%;
     margin-left:2px;
+  }
+
+  .sidebar__menu-item--li{
+    width:auto;
+    text-align: left;
+    font-size: 70%;
+  }
+
+  .page__title-text--medium{
+    text-align: left;
   }
 }
 
