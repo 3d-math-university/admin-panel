@@ -31,11 +31,6 @@ class HomeController extends Controller
         return view('departments');
     }
 
-    public function settings()
-    {
-        return view('settings');
-    }
-
     public function page()
     {
         return view('page');
